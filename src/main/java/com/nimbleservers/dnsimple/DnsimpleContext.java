@@ -540,6 +540,8 @@ public class DnsimpleContext {
 
         map.put("record", record);
         httpPost.setHeaders(headers);
+        String postBody = gson.toJson(map);
+        System.out.println("Attempting to post: " + postBody);
         httpPost.setEntity(new StringEntity(gson.toJson(map), CHARSET));
 
         try {

@@ -10,8 +10,8 @@ public class TestMAin {
     private static DnsimpleContext dns = new DnsimpleContext("w9gZn3Xso2AJ32yibEHKeZc6tpvzXcUT", "https://api.dnsimple.com/v1");
 
     public static void main(String[] args) throws IOException, UnexpectedResponseException {
-        List<Record> a = dns.getRecords("webyoso.com");
-        System.out.println(a);
+//        List<Record> a = dns.addRecord("webyoso.com");
+//        System.out.println(a);
     }
 
 }
